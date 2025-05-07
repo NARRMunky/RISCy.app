@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RISCy.APP your riscV app database</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  </head>
+  <body>
+    <header>
+		<h1>RISCy.app</h1>
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li>Catagories</li>
+			<li><a href="about.html">About</a></li>
+			<li><strong>Add App</strong></li>
+		</ul>
+    </header>
+    <main class="AddApp">
+		<h2>Add App Form</h2>
+		<div class="box">
+			<form action="index.html" method="GET">
+				<fieldset>
+					<legend>Contact Info:</legend>
+					<div class="form">
+						<label>First Name:
+							<input type="text" name="firstName" placeholder="Linus" minlength="2">
+						</label>
+					</div>
+					<div class="form">
+						<label>Last Name:
+							<input type="text" name="lastName" placeholder="Torvalds" minlength="2">
+						</label>
+					</div>
+					<div class="form">
+						<label>Email:
+							<input type="email" name="email" required placeholder="TechGod@linux.org">
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>APP Info:</legend>
+					<div class="form">
+						<label>APP Name:
+							<input type="text" name="appName" placeholder="APP Name" minlength="2">
+						</label>
+					</div>
+					<div class="form">
+						<label>Image Link:
+							<input type="text" name="imgLink" placeholder="Example.org/example.jpg" minlength="2">
+						</label>
+					</div>
+					<div class="form">
+						<label>Project Link:
+							<input type="text" name="projectLink" required placeholder="example.org">
+						</label>
+					</div>
+					<div class="form">
+						<label>App Status:
+							<input type="text" name="status" required placeholder="short description">
+						</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="form">
+						<label><img class="appshield" src="FOSS.jpg">FOSS - Free Open Source Software
+							<input type="radio" name="appType" value="FOSS">
+						</label>
+					</div>
+					<div class="form">
+						<label><img class="appshield" src="FNC.jpg">FNC - Freeware Non-commercial
+							<input type="radio" name="appType" value="FNC">
+						</label>
+					</div>
+				</fieldset>
+				<div class="form">
+					<button type="submit">Submit</button>
+					<button type="reset">Reset Fields</button>
+				</div>
+			</form>
+		</div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

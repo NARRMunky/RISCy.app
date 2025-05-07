@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.catprod .graphics, .catprod .games, .catprod .web,
+.catprod .emulators, .catprod .dev, .catprod .media,
+.catprod .misc{
+	display: none;
+}
+.catgames .graphics, .catgames .productivity, .catgames .web,
+.catgames .emulators, .catgames .dev, .catgames .media,
+.catgames .misc{
+	display: none;
+}
+.catgraph .games, .catgraph .productivity, .catgraph .web,
+.catgraph .emulators, .catgraph .dev, .catgraph .media,
+.catgraph .misc{
+	display: none;
+}
+.catemu .games, .catemu .productivity, .catemu .web,
+.catemu .graphics, .catemu .dev, .catemu .media,
+.catemu .misc{
+	display: none;
+}
+.catdev .games, .catdev .productivity, .catdev .web,
+.catdev .graphics, .catdev .emulators, .catdev .media,
+.catdev .misc{
+	display: none;
+}
+.catmedia .games, .catmedia .productivity, .catmedia .web,
+.catmedia .graphics, .catmedia .emulators, .catmedia .dev,
+.catmedia .misc{
+	display: none;
+}
+.catmisc .games, .catmisc .productivity, .catmisc .web,
+.catmisc .graphics, .catmisc .emulators, .catmisc .dev,
+.catmisc .media{
+	display: none;
+}
+.catweb .games, .catweb .productivity, .catweb .misc,
+.catweb .graphics, .catweb .emulators, .catweb .dev,
+.catweb .media{
+	display: none;
+}
+h1{
+	background-image: url("circuitb.jpg");
+	background-repeat: no-repeat ;
+	background-position: center ;
+	background-size: cover ;
+	color: gold;
+	text-align: center;
+	height: 12vh;
+	font-size: 8vh;
+	text-shadow: 2px 2px 2px black;
+}
+ul{
+	position: relative;
+	background-color: gray;
+	padding: 5px 10%;
+	list-style: none;
+	text-decoration: none;
+}
+li{
+	display: inline;
+	color: white;
+	text-decoration: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.menu{
+	display: none;
+}
+.menu:hover{
+	display: block;
+}
+li a:hover{
+	color: red;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+h2{
+	margin: 5px;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+}
+h3{
+	margin: 2px;
+	text-align: center;
+	color: black;
+}
+p{
+	color: black;
+	margin: 10px;
+	margin-bottom: 10%;
+}
+div{
+	position: relative;
+	border: 2px solid black;
+	border-radius: 8px;
+	width: 95vw;
+	box-shadow: 2px 2px 2px black;
+	background-color: lightgray;
+	color: black;
+	margin: 2vh auto;
+}
+img{
+	width: 40%;
+	margin: 5px 30%;
+}
+.shield{
+	border: 1px solid black;
+	width: 15px;
+	height: 15px;
+	margin: 2px 0 2px 1vw;
+}
+footer{
+	text-align: center;
+}
+span{
+	display: block;
+	position: absolute;
+	bottom: 0.2rem;
+	left: 0.1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+h5{
+	color: black;
+}
+.about{
+	display: block;
+}
+.about p{
+	width: 75%;
+	margin: 5px auto;
+}
+.aboutfooter{
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+}
+.app{
+	display: block;
+}
+.app div{
+	width: 75%;
+}
+.app p{
+	margin: 10px 25px;
+	text-align:center;
+}
+.app a{
+	color: blue;
+}
+.app h3{
+	margin: 5px 10%;
+}
+.appshield{
+	margin: 0;
+	width: 20px;
+	border: 1px solid black;
+}
+.AddApp{
+	display: block;
+}
+.box{
+	padding: 10px;
+}
+.form{
+	border: none;
+	background-color: clear;
+	width: 90%;
+	box-shadow: none;
+	padding: 10px;
+	margin: 5px;
+}
+fieldset{
+	padding: 5px;
+}
+ul li:hover > ul,
+ul li ul:hover {
+	display: block;
+	position: absolute;
+	word-break: keep-all ;
+	text-decoration: none;
+	padding: 2px 10px;
+	width: 5vw;
+	left: 26%;
+    bottom: -2;
+	padding: 2px 10px;
+	width: 5vw;
+	z-index:1;
+}
+@media only screen and (min-width: 426px) and (max-width: 960px){
+/*Tablet Styling*/
+h1{
+	background-image: url("circuitb.jpg");
+	background-repeat: no-repeat ;
+	background-position: center ;
+	background-size: cover ;
+	color: gold;
+	text-align: center;
+	height: 12vh;
+	font-size: 8vh;
+	text-shadow: 2px 2px 2px black;
+	margin: 0 10%;
+}
+ul{
+	background-color: gray;
+	padding: 5px 27%;
+	list-style: none;
+	text-decoration: none;
+	margin: 0 10%;
+}
+li{
+	display: inline;
+	color: white;
+	text-decoration: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+main{
+	display: grid;
+	grid: auto-flow / 1fr 1fr;
+}
+div{
+	border: 2px solid black;
+	border-radius: 8px;
+	width: 25vw;
+	box-shadow: 2px 2px 2px black;
+	background-color: lightgray;
+	color: black;
+	margin: 2vh auto;
+}
+.aboutfooter{
+	position: absolute;
+	bottom: 0;
+	left: 20%;
+}
+}
+@media only screen and (min-width: 961px){
+/*computer Styling*/
+
+h1{
+	background-image: url("circuitb.jpg");
+	background-repeat: no-repeat ;
+	background-position: center ;
+	background-size: cover ;
+	color: gold;
+	text-align: center;
+	height: 12vh;
+	font-size: 8vh;
+	text-shadow: 2px 2px 2px black;
+	margin: 0 15%;
+}
+ul{
+	background-color: gray;
+	padding: 5px 27%;
+	list-style: none;
+	text-decoration: none;
+	margin: 0 15%;
+}
+li{
+	display: inline;
+	color: white;
+	text-decoration: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+main{
+	display: grid;
+	grid: auto-flow / 1fr 1fr 1fr;
+}
+div{
+	border: 2px solid black;
+	border-radius: 8px;
+	width: 25vw;
+	box-shadow: 2px 2px 2px black;
+	background-color: lightgray;
+	color: black;
+	margin: 2vh auto;
+}
+.aboutfooter{
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+}
+.app div{
+	width: 50%;
+}
+}
